@@ -1,0 +1,12 @@
+{
+  "name": "datastructure_solutions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc stack.ts && node stack.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
