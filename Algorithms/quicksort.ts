@@ -21,5 +21,5 @@ const QuickSort = (num: number[]): number[] => {
   return [...QuickSort(left), pivot, ...QuickSort(right)];
 };
 
-const sorted = QuickSort([1, 4, 5, 1, 3, 6, 7, 2]);
+const sorted = QuickSort([1, 4]);
 console.log(sorted);
