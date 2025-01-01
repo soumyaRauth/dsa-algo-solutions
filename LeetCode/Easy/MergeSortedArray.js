@@ -11,7 +11,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
 var MergeSortedArray = function (nums1, m, nums2, n) {
     //nums1=[1,3,4,5,5]
     //nums2=[1,3,5,6]
-    //m=5,n=4
+    //m=5,n=4x
     //nums1=[1,1,3,3,4,5,5,5,6]
     nums1 = __spreadArray(__spreadArray([], nums1, true), nums2, true);
     console.log("nums1", nums1);
