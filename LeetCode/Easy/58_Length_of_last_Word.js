@@ -1,7 +1,8 @@
+"use strict";
 // https://leetcode.com/problems/length-of-last-word/
 function lengthOfLastWord(s) {
-    var length = 0;
-    var i = s.length - 1;
+    let length = 0;
+    let i = s.length - 1;
     while (i >= 0 && s[i] === " ") {
         i--;
     }
@@ -11,5 +12,5 @@ function lengthOfLastWord(s) {
     }
     return length;
 }
-var lengthOfString = lengthOfLastWord("Hello worldo ");
+let lengthOfString = lengthOfLastWord("Hello worldo ");
 console.log(lengthOfString);

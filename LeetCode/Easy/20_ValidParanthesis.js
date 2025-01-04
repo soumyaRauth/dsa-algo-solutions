@@ -1,27 +1,23 @@
+"use strict";
 function isValid(s) {
-    var stack = [];
-    var paranthesis = {
+    let stack = [];
+    let bracketMap = {
         "(": ")",
         "{": "}",
         "[": "]",
     };
-    for (var i = 0; i < s.length; i++) {
-        if (s[i] in paranthesis) {
-            stack.push(paranthesis[s[i]]);
+    for (let char of s) {
+        if (char in bracketMap) {
+            stack.push(bracketMap[char]);
         }
         else {
-            var poppedValue = stack.pop();
-            if (poppedValue != s[i]) {
+            let poppedValue = stack.pop();
+            if (poppedValue != char) {
                 return false;
             }
         }
     }
-    if (stack.length == 0) {
-        return true;
-    }
-    else {
-        return false;
-    }
+    return stack.length == 0;
 }
-var result = isValid("([]");
+let result = isValid("([]");
 console.log(result);

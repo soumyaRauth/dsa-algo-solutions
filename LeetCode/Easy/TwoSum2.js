@@ -1,9 +1,10 @@
+"use strict";
 //[1,2,3,4,5] target = 7 solve this using two pointer approach
-var TwoSum2 = function (nums, target) {
-    var pointer1 = 0;
-    var pointer2 = nums.length - 1;
+const TwoSum2 = (nums, target) => {
+    let pointer1 = 0;
+    let pointer2 = nums.length - 1;
     while (pointer1 < pointer2) {
-        var sum = nums[pointer1] + nums[pointer2];
+        let sum = nums[pointer1] + nums[pointer2];
         if (sum === target) {
             return [pointer1, pointer2];
         }
@@ -16,5 +17,5 @@ var TwoSum2 = function (nums, target) {
     }
     return [];
 };
-var target = TwoSum2([1, 2, 3, 4, 5], 17);
+let target = TwoSum2([1, 2, 3, 4, 5], 17);
 console.log(target);

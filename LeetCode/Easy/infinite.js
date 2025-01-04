@@ -1,6 +1,7 @@
-var Infinite = function () {
+"use strict";
+const Infinite = () => {
     while (true) {
-        console.log("☕️", "🧑‍💻", "🛌");
+        console.log("☕️ -> 🧑‍💻 -> 🛌");
     }
 };
 Infinite();

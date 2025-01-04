@@ -1,6 +1,7 @@
+"use strict";
 "https://leetcode.com/problems/plus-one/description/";
 function plusOne(digits) {
-    for (var i = digits.length - 1; i >= 0; i--) {
+    for (let i = digits.length - 1; i >= 0; i--) {
         if (digits[i] != 9) {
             digits[i] = digits[i] + 1;
             return digits;
@@ -13,5 +14,5 @@ function plusOne(digits) {
     return digits;
 }
 ;
-var plOne = plusOne([9, 9]);
+let plOne = plusOne([9, 9]);
 console.log(plOne);
