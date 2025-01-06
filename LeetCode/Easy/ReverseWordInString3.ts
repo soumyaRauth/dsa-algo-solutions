@@ -1,24 +1,24 @@
 function reverseWords(s: string): string {
   let splitted = s.split("");
-  let i = 0;
-  let start = 0;
-  let end = 0;
-  while (i < splitted.length) {
-    if (splitted[i] == " ") {
-      end = i - 1;
-      while (start < end) {
-        let temp = splitted[start];
-        splitted[start] = splitted[end];
-        splitted[end] = temp;
-        start++;
-        end--;
-      }
-    }
-    i++;
-  }
-  console.log("splitted");
-  console.log(splitted);
 
+  let index = 0;
+  let left = 0;
+  while (index <= splitted.length) {
+    if (splitted[index] == " " || index == splitted.length) {
+      let temp_right = index - 1;
+
+      while (left < temp_right) {
+        //-reverseWords
+        let temp = splitted[left];
+        splitted[left] = splitted[temp_right];
+        splitted[temp_right] = temp;
+        left++;
+        temp_right--;
+      }
+      left = index + 1;
+    }
+    index++;
+  }
   return splitted.join(" ");
 }
 
